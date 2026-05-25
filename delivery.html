@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Жаворонкова Маргарита">
+    <meta name="description" content="Курсовая работа: Книжный интернет-магазин">
+    <meta name="keywords" content="книжный магазин, книги, Пушкин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Доставка и гарантии</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<!-- Хэдер -->
+<header class="header">
+<div class="header-container">
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="Logo"> </div>
+        <div class="logo-text">Книжный<br>дом</div> </div>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Главная</a>  
+        <div class="dropdown">
+            <a href="#" class="nav-link" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Лирика</a>
+                <a href="catalog2.html" class="catalog-item">Эпос</a>
+                <a href="catalog3.html" class="catalog-item">Драма</a>
+                <a href="catalog4.html" class="catalog-item">Манга</a> </div>
+        </div>
+        <a href="delivery.html" class="nav-link">Доставка</a>
+        <a href="hit.html" class="nav-link">Хиты продаж</a>
+    </nav>
+    <div class="header-tools">
+        <a href="basket.html" class="tool-circle">
+            <img src="img/cart-icon.png" alt="Корзина" class="tool-img"> </a>
+        <a href="profile.html" class="tool-circle">
+            <img src="img/user-icon.png" alt="Профиль" class="tool-img"> </a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..."> </div>
+        </div>
+    </div>
+</header>
+<!--Доставка-->
+<main class="delivery-page-content">
+    <div class="delivery-container">
+        
+        <h1 class="delivery-title">Доставка и получение заказов</h1>
+        <p class="delivery-subtitle">Мы доставляем вдохновение и знания в любой уголок страны. Выберите удобный способ получения заказа, а мы позаботимся обо всем остальном.</p>
+
+        <div class="delivery-methods-grid">
+            
+            <div class="delivery-card">
+                <div class="delivery-card-icon">📦</div>
+                <h3 class="delivery-card-title">Пункты выдачи и Постаматы</h3>
+                <p class="delivery-card-desc">Более 15 000 точек по всей России через наших партнеров: СДЭК, Boxberry, 5Post (в магазинах «Пятёрочка») и Яндекс Доставка.</p>
+                <div class="delivery-info-tags">
+                    <span class="tag-price">От 149 ₽ (Бесплатно от 2 000 ₽)</span>
+                    <span class="tag-time">⏱ 2–5 дней</span>
+                </div>
+                <ul class="delivery-card-list">
+                    <li>Смс или push-уведомление о прибытии заказа.</li>
+                    <li>Срок хранения посылки в пункте — 7 дней.</li>
+                    <li>Возможность проверить состояние книг при получении.</li>
+                </ul>
+            </div>
+
+            <div class="delivery-card featured-card">
+                <div class="delivery-card-icon">🚗</div>
+                <h3 class="delivery-card-title">Курьером до двери</h3>
+                <p class="delivery-card-desc">Самый комфортный способ. Курьер привезет ваш заказ домой или в офис в удобный временной интервал и предварительно позвонит за час.</p>
+                <div class="delivery-info-tags">
+                    <span class="tag-price">От 299 ₽ (Бесплатно от 3 500 ₽)</span>
+                    <span class="tag-time">⏱ 1–3 дня</span>
+                </div>
+                <ul class="delivery-card-list">
+                    <li>Выбор удобного интервала времени доставки при оформлении.</li>
+                    <li>Бесконтактная доставка по запросу.</li>
+                    <li>Доставка в подарок: привезем заказ близкому человеку, даже если вы не знаете его точный адрес (согласуем по телефону!).</li>
+                </ul>
+            </div>
+
+            <div class="delivery-card">
+                <div class="delivery-card-icon">✉️</div>
+                <h3 class="delivery-card-title">Почта России</h3>
+                <p class="delivery-card-desc">Доставка в любое, даже самое удаленное почтовое отделение страны. Идеально подходит для регионов, где нет партнерских пунктов выдачи.</p>
+                <div class="delivery-info-tags">
+                    <span class="tag-price">От 199 ₽</span>
+                    <span class="tag-time">⏱ 4–12 дней</span>
+                </div>
+                <ul class="delivery-card-list">
+                    <li>Отслеживание по трек-номеру на сайте или в приложении Почты.</li>
+                    <li>Срок хранения в отделении составляет 15 дней.</li>
+                    <li>Доступна услуга доставки посылки из отделения на дом курьером Почты.</li>
+                </ul>
+            </div>
+
+            <div class="delivery-card">
+                <div class="delivery-card-icon">🏪</div>
+                <h3 class="delivery-card-title">Самовывоз из «Книжного Дома»</h3>
+                <p class="delivery-card-desc">Заберите книги самостоятельно из наших розничных магазинов-партнеров или главного склада компании совершенно бесплатно.</p>
+                <div class="delivery-info-tags">
+                    <span class="tag-price free-tag">Бесплатно всегда</span>
+                    <span class="tag-time">⏱ Сегодня от 2 часов</span>
+                </div>
+                <ul class="delivery-card-list">
+                    <li>Сборка заказа начинается сразу после подтверждения.</li>
+                    <li>Книги бронируются за вами на 5 дней.</li>
+                    <li>Подарок к каждому самовывозу — коллекционная книжная закладка!</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <section class="packaging-section">
+            <div class="packaging-badge">Гарантия сохранности</div>
+            <div class="packaging-flex">
+                <div class="packaging-text">
+                    <h2 class="packaging-title">Бережная упаковка: уголки будут целы!</h2>
+                    <p class="packaging-p">Мы обожаем книги так же сильно, как и вы, поэтому знаем, как обидно получить долгожданный роман со смятым корешком или поцарапанной обложкой. В «Книжном Доме» упаковка возведена в абсолютный стандарт качества:</p>
+                    
+                    <div class="packaging-steps">
+                        <div class="step-item">
+                            <span class="step-num">01</span>
+                            <div>
+                                <h4>Плотная воздушно-пузырьковая пленка</h4>
+                                <p>Каждая книга индивидуально оборачивается в 2 слоя защитной бабл-пленки, предотвращающей тряску.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-num">02</span>
+                            <div>
+                                <h4>Усиленные картонные коробки</h4>
+                                <p>Никаких мягких пакетов для больших заказов. Только прочный трехслойный гофрокартон, держащий удар.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-num">03</span>
+                            <div>
+                                <h4>Эко-наполнитель</h4>
+                                <p>Свободное пространство внутри коробки заполняется легким биоразлагаемым крафт-наполнителем, чтобы книги не скользили.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packaging-visual">
+                    <div class="box-mockup">
+                        <img src="img/packing.png" alt="Защищено на 100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-faq">
+            <h2 class="faq-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Как отследить статус отправленного заказа? <span>+</span></div>
+                <div class="faq-answer">Сразу после передачи посылки в службу доставки мы пришлем вам SMS и письмо на email с трек-номером и ссылкой на страницу отслеживания. Также статус всегда виден в вашем Личном кабинете в разделе «Мои заказы».</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Что делать, если книга пришла поврежденной? <span>+</span></div>
+                <div class="faq-answer">Если вы обнаружили дефект при получении, просто откажитесь от посылки или попросите сотрудника пункта составить акт. Напишите нам, и мы оперативно вышлем вам новый экземпляр за наш счет или полностью вернем деньги.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Можно ли изменить адрес доставки после оформления заказа? <span>+</span></div>
+                <div class="faq-answer">Да, изменить адрес или время доставки возможно, если заказ еще не передан курьерской службе (статус «В сборке»). Пожалуйста, свяжитесь с нашей службой поддержки по телефону как можно скорее.</div>
+            </div>
+        </section>
+
+    </div>
+</main>
+<!--Футер-->
+<footer class="footer"> <div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2 class="footer-logo-text">Книжный дом</h2>
+        </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li> </ul> </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +7 (900) 000-00-00</li>
+                    <li><i class="fas fa-envelope"></i> info@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Ежедневно с 8:00 до 22:00</li> </ul> </div>
+    </div> </div> </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

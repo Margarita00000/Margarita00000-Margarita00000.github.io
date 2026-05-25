@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Жаворонкова Маргарита">
+    <meta name="description" content="Курсовая работа: Книжный интернет-магазин">
+    <meta name="keywords" content="книжный магазин, книги, Пушкин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Хиты продаж</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<!-- Хэдер -->
+<header class="header">
+<div class="header-container">
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="Logo"> </div>
+        <div class="logo-text">Книжный<br>дом</div> </div>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Главная</a>  
+        <div class="dropdown">
+            <a href="#" class="nav-link" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Лирика</a>
+                <a href="catalog2.html" class="catalog-item">Эпос</a>
+                <a href="catalog3.html" class="catalog-item">Драма</a>
+                <a href="catalog4.html" class="catalog-item">Манга</a> </div>
+        </div>
+        <a href="delivery.html" class="nav-link">Доставка</a>
+        <a href="hit.html" class="nav-link">Хиты продаж</a>
+    </nav>
+    <div class="header-tools">
+        <a href="basket.html" class="tool-circle">
+            <img src="img/cart-icon.png" alt="Корзина" class="tool-img"> </a>
+        <a href="profile.html" class="tool-circle">
+            <img src="img/user-icon.png" alt="Профиль" class="tool-img"> </a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..."> </div>
+        </div>
+    </div>
+</header>
+<!--Каталог-->
+<main class="catalog-main-content">
+    <div class="catalog-container">
+        
+        <div class="catalog-header-block">
+            <h1 class="catalog-title">Манга</h1>
+            <p class="catalog-subtitle">Лучшие издания, отобранные с любовью и заботой о читателе</p>
+        </div>
+
+        <div class="modern-books-grid">
+            <div class="modern-book-card">
+                <div class="modern-book-cover">
+                    <img src="img/manga1.jpg" alt="Сердца Пандоры">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Дзюн Мотидзука</p>
+                    <h3 class="modern-book-title">Сердца Пандоры</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">1 599 ₽</span>
+                        <button class="btn-buy" data-id="1" data-title="Сердца Пандоры" data-author="Дзюн Мотидзука" data-price="1599" data-img="img/manga1.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modern-book-card">
+                <div class="modern-book-cover">
+                    <img src="img/manga2.jpg" alt="A Sinistra">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Такэси Обата</p>
+                    <h3 class="modern-book-title">Бакуман</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">1 199 ₽</span>
+                        <button class="btn-buy" data-id="2" data-title="Бакуман" data-author="Такэси Обата" data-price="1199" data-img="img/manga2.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modern-book-card">
+                <div class="modern-book-cover">
+                    <img src="img/manga3.jpg" alt="Моя геройская академия">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Анна Джейн</p>
+                    <h3 class="modern-book-title">Моя геройская академия</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">599 ₽</span>
+                        <button class="btn-buy" data-id="3" data-title="Моя геройская академия" data-author="Анна Джейн" data-price="599" data-img="img/manga3.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modern-book-card">
+                <div class="modern-book-cover">
+                 
+                    <img src="img/manga4.jpg" alt="Атака Титанов">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Хадзимэ Исаяма</p>
+                    <h3 class="modern-book-title">Атака Титанов. Том 1</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">850 ₽</span>
+                        <button class="btn-buy" data-id="1" data-title="Атака Титанов. Том 1" data-author="Хадзимэ Исаяма" data-price="850" data-img="img/book1.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="modern-book-card">
+                <div class="modern-book-cover">
+             
+                    <img src="img/manga6.jpg" alt="Сью и Тайчик">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Конами Каната</p>
+                    <h3 class="modern-book-title">Сью и Тайчик. Том 6</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">690 ₽</span>
+                        <button class="btn-buy" data-id="2" data-title="Сью и Тайчик. Том 6" data-author="Конами Каната" data-price="690" data-img="img/book2.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="modern-book-card">
+                <div class="modern-book-cover">
+                 
+                    <img src="img/manga5.jpg" alt="Стальной Алхимик">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Хирому Аракава</p>
+                    <h3 class="modern-book-title">Стальной Алхимик. Том 1 (Deluxe)</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">1 200 ₽</span>
+                        <button class="btn-buy" data-id="3" data-title="Стальной Алхимик. Том 1 (Deluxe)" data-author="Хирому Аракава" data-price="1200" data-img="img/book3.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+             <div class="modern-book-card">
+                <div class="modern-book-cover">
+                  
+                    <img src="img/manga8.jpg" alt="Волейбол!">
+                </div>
+                <div class="modern-book-info">
+                    <p class="modern-book-author">Харуичи Фурудатэ</p>
+                    <h3 class="modern-book-title">Волейбол! Том 24</h3>
+                    <div class="modern-card-footer">
+                        <span class="modern-price">750 ₽</span>
+                        <button class="btn-buy" data-id="7" data-title="Волейбол! Том 24" data-author="Харуичи Фурудатэ" data-price="750" data-img="img/book4_new.jpg">В корзину</button>
+                    </div>
+                </div>
+            </div>
+           <div class="modern-book-card">
+    <div class="modern-book-cover">
+        <img src="img/manga (2).jpg" alt="Наруто">
+    </div>
+    <div class="modern-book-info">
+        <p class="modern-book-author">Масаси Кишимото</p>
+        <h3 class="modern-book-title">Наруто. Том 1</h3>
+        <div class="modern-card-footer">
+            <span class="modern-price">899 ₽</span>
+            <button class="btn-buy" data-id="8" data-title="Наруто. Том 1" data-author="Масаси Кишимото" data-price="899" data-img="img/naruto.jpg">В корзину</button>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</main>
+<!--Футер-->
+<footer class="footer"> <div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2 class="footer-logo-text">Книжный дом</h2>
+        </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li> </ul> </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +7 (900) 000-00-00</li>
+                    <li><i class="fas fa-envelope"></i> info@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Ежедневно с 8:00 до 22:00</li> </ul> </div>
+    </div> </div> </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

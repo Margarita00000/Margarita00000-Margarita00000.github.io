@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Жаворонкова Маргарита">
+    <meta name="description" content="Курсовая работа: Книжный интернет-магазин">
+    <meta name="keywords" content="книжный магазин, книги, Пушкин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Хиты продаж</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<!-- Хэдер -->
+<header class="header">
+<div class="header-container">
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="Logo"> </div>
+        <div class="logo-text">Книжный<br>дом</div> </div>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Главная</a>  
+        <div class="dropdown">
+            <a href="#" class="nav-link" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Лирика</a>
+                <a href="catalog2.html" class="catalog-item">Эпос</a>
+                <a href="catalog3.html" class="catalog-item">Драма</a>
+                <a href="catalog4.html" class="catalog-item">Манга</a> </div>
+        </div>
+        <a href="delivery.html" class="nav-link">Доставка</a>
+        <a href="hit.html" class="nav-link">Хиты продаж</a>
+    </nav>
+    <div class="header-tools">
+        <a href="basket.html" class="tool-circle">
+            <img src="img/cart-icon.png" alt="Корзина" class="tool-img"> </a>
+        <a href="profile.html" class="tool-circle">
+            <img src="img/user-icon.png" alt="Профиль" class="tool-img"> </a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..."> </div>
+        </div>
+    </div>
+</header>
+<!--Хиты продаж-->
+<main class="hits-page-content">
+    <div class="container">
+        
+        <h1 class="page-main-title">🔥 Хиты продаж</h1>
+        <p class="page-subtitle">Самые читаемые, обсуждаемые и покупаемые книги с приятными скидками.</p>
+
+        <section class="book-bundles-section">
+            <h2 class="hits-section-title">Выгодные комплекты (Комбо)</h2>
+            <div class="bundles-grid">
+                
+                <div class="bundle-card">
+                    <div class="bundle-badge">Выгода 25%</div>
+                    <div class="bundle-books">
+                        <div class="bundle-book-mini">
+                            <img src="img/manga5.jpg" alt="Шугги Бейн">
+                            <span>Стальной Алхимик</span>
+                        </div>
+                        <div class="bundle-plus">+</div>
+                        <div class="bundle-book-mini">
+                            <img src="img/manga (2).jpg" alt="Наруто">
+                            <span>Наруто</span>
+                        </div>
+                    </div>
+                    <div class="bundle-info">
+                        <h3>Отправляйтесь в Японию</h3>
+                        <p class="bundle-desc">Полный комплект интересной манги</p>
+                        <div class="bundle-price-block">
+                            <span class="old-price">1 980 ₽</span>
+                            <span class="new-price">1 485 ₽</span>
+                        </div>
+                        <button class="btn-buy-bundle">Купить комплект</button>
+                    </div>
+                </div>
+
+                <div class="bundle-card">
+                    <div class="bundle-badge">Выгода 20%</div>
+                    <div class="bundle-books">
+                        <div class="bundle-book-mini">
+                            <img src="img/drama1.jpg" alt="Тревожные люди">
+                            <span>Сумерки </span>
+                        </div>
+                        <div class="bundle-plus">+</div>
+                        <div class="bundle-book-mini">
+                            <img src="img/drama3.jpg" alt="Вторая жизнь Уве">
+                            <span>Госпажа Бовари</span>
+                        </div>
+                    </div>
+                    <div class="bundle-info">
+                        <h3>Комбо: Душевная Драма</h3>
+                        <p class="bundle-desc">Погрузитесь в эмоции и переживания персонажей</p>
+                        <div class="bundle-price-block">
+                            <span class="old-price">1 650 ₽</span>
+                            <span class="new-price">1 320 ₽</span>
+                        </div>
+                        <button class="btn-buy-bundle">Купить комплект</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="hits-grid-section">
+            <h2 class="hits-section-title">Лучшие из лучших</h2>
+            <div class="books-grid">
+                
+                <div class="book-card-hit">
+                    <div class="hit-label action-label">-20%</div>
+                    <div class="book-cover">
+                        <img src="img\ddd.jpg" alt="Безмолвный пациент">
+                    </div>
+                    <div class="book-info">
+                        <div class="price-block">
+                            <span class="current-price">630 ₽</span>
+                            <span class="old-price-single">790 ₽</span>
+                        </div>
+                        <div class="title">Безмолвный пациент</div>
+                        <a href="img\ddd.jpg" class="author">Алекс Михаэлидес</a>
+                        <button class="btn-buy">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="book-card-hit">
+                    <div class="hit-label top-label">Хит</div>
+                    <div class="book-cover">
+                        <img src="img\duna.jpg" alt="Дюна">
+                    </div>
+                    <div class="book-info">
+                        <div class="price-block">
+                            <span class="current-price">950 ₽</span>
+                        </div>
+                        <div class="title">Дюна</div>
+                        <a href="img\duna.jpg" class="author">Фрэнк Герберт</a>
+                        <button class="btn-buy">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="book-card-hit">
+                    <div class="hit-label special-label">Новинка</div>
+                    <div class="book-cover">
+                        <img src="img/Klara.jpg" alt="Клара и Солнце">
+                    </div>
+                    <div class="book-info">
+                        <div class="price-block">
+                            <span class="current-price">720 ₽</span>
+                        </div>
+                        <div class="title">Клара и Солнце</div>
+                        <a href="#" class="author">Кадзуо Исигуро</a>
+                        <button class="btn-buy">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="book-card-hit">
+                    <div class="hit-label action-label">-15%</div>
+                    <div class="book-cover">
+                        <img src="img/bibliotka.jpg" alt="Полночная библиотека">
+                    </div>
+                    <div class="book-info">
+                        <div class="price-block">
+                            <span class="current-price">585 ₽</span>
+                            <span class="old-price-single">690 ₽</span>
+                        </div>
+                        <div class="title">Полночная библиотека</div>
+                        <a href="#" class="author">Мэтт Хейг</a>
+                        <button class="btn-buy">В корзину</button>
+                    </div>
+                </div>
+                
+                </div>
+
+            </div>
+        </section>
+    </div>
+</main>
+<!--Футер-->
+<footer class="footer"> <div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2 class="footer-logo-text">Книжный дом</h2>
+        </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li> </ul> </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +7 (900) 000-00-00</li>
+                    <li><i class="fas fa-envelope"></i> info@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Ежедневно с 8:00 до 22:00</li> </ul> </div>
+    </div> </div> </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Жаворонкова Маргарита">
+    <meta name="description" content="Курсовая работа: Книжный интернет-магазин">
+    <meta name="keywords" content="книжный магазин, книги, Пушкин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<!-- Хэдер -->
+<header class="header">
+<div class="header-container">
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="Logo"> </div>
+        <div class="logo-text">Книжный<br>дом</div> </div>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Главная</a>  
+        <div class="dropdown">
+            <a href="#" class="nav-link" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Лирика</a>
+                <a href="catalog2.html" class="catalog-item">Эпос</a>
+                <a href="catalog3.html" class="catalog-item">Драма</a>
+                <a href="catalog4.html" class="catalog-item">Манга</a> </div>
+        </div>
+        <a href="delivery.html" class="nav-link">Доставка</a>
+        <a href="hit.html" class="nav-link">Хиты продаж</a>
+    </nav>
+    <div class="header-tools">
+        <a href="basket.html" class="tool-circle">
+            <img src="img/cart-icon.png" alt="Корзина" class="tool-img"> </a>
+        <a href="profile.html" class="tool-circle">
+            <img src="img/user-icon.png" alt="Профиль" class="tool-img"> </a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..."> </div>
+        </div>
+    </div>
+</header>
+<!--Акции-->
+<section class="certificates-section">
+<div class="container">
+    <div class="cert-content">
+        <div class="cert-text">
+            <h1>Подарочные сертификаты</h1>
+            <p class="subtitle">Что может быть лучшим подарком для книголюба, чем возможность выбрать историю самому?</p>
+            <div class="description">
+                <p>Подарочный сертификат — это забота без риска ошибиться.</p>
+                <p>Идеально для близких. И для себя тоже.</p>
+                <p class="promo-line">📖 Иногда лучший подарок — это выбор.</p> </div>
+        </div>
+            <div class="cert-image">
+                <img src="img/sale.png" alt="Подарочные карты"> </div>
+    </div> </div> </section>
+<!--Золотые новинки-->
+<section class="books-section">
+<div class="container">
+    <h2 class="section-title">Золотые новинки</h2>
+    <div class="books-grid">
+        
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="img/book1.jpg" alt="В начале было Слово"> </div>
+            <div class="book-info">
+                <div class="price">1 599 ₽</div>
+                <div class="title"> <b>Маргарита Симоньян</b> <br> В начале было Слово — <br> в конце будет Цифра</div> </div>
+                <button class="btn-buy" data-id="1" data-title="В начале было Слово — в конце будет Цифра" data-author="Маргарита Симоньян" data-price="1599" data-img="img/book1.jpg">В корзину</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="img/book2.png" alt="A Sinistra"> </div>
+            <div class="book-info">
+                <div class="price">1 199 ₽</div>
+                <div class="title"> <b>Виктор Пелевин</b> <br> A Sinistra <br> А Синистра | Левый Путь</div> </div>
+                <button class="btn-buy" data-id="2" data-title="A Sinistra | А Синистра | Левый Путь" data-author="Виктор Пелевин" data-price="1199" data-img="img/book2.png">В корзину</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="img/book3.jpg" alt="Твое сердце будет разбито"> </div>
+            <div class="book-info">
+                <div class="price">599 ₽</div>
+                <div class="title"> <b>Анна Джейн</b> <br> Твое сердце <br> будет разбито</div> </div>
+                <button class="btn-buy" data-id="3" data-title="Твое сердце будет разбито" data-author="Анна Джейн" data-price="599" data-img="img/book3.jpg">В корзину</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="img/book4.jpg" alt="Дом, в котором"> </div>
+            <div class="book-info">
+                <div class="price">1 999 ₽</div>
+                <div class="title"> <b>Мариам Петросян</b> <br> Дом, в котором <br> (расширенное издание)</div> </div>
+                <button class="btn-buy" data-id="4" data-title="Дом, в котором (расширенное издание)" data-author="Мариам Петросян" data-price="1999" data-img="img/book4.jpg">В корзину</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="img/book5.jpg" alt="Мастер и Маргарита"> </div>
+            <div class="book-info">
+                <div class="price">678 ₽</div>
+                <div class="title"> <b>Михаил Булгаков</b> <br> Мастер и Маргарита</div> </div>
+                <br>
+                <button class="btn-buy" data-id="5" data-title="Мастер и Маргарита" data-author="Михаил Булгаков" data-price="678" data-img="img/book5.jpg">В корзину</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="img/book6.jpg" alt="Гарри Поттер"> </div>
+            <div class="book-info">
+                <div class="price">1 499 ₽</div>
+                <div class="title"> <b>Джоан Кэтлин Роулинг</b> <br> Гарри Поттер <br> и Принц-полукровка</div> </div>
+                <button class="btn-buy" data-id="6" data-title="Гарри Поттер и Принц-полукровка" data-author="Джоан Кэтлин Роулинг" data-price="1499" data-img="img/book6.jpg">В корзину</button>
+        </div>
+
+    </div>
+</div> 
+</section>   
+<!--Наши авторы-->
+<section class="partners-section">
+<h2 class="section-title">Наши авторы</h2>
+<div class="carousel-container">
+    <button class="carousel-btn prev-btn" id="prevBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg> </button>
+    <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide active-slide">
+                <img src="img/autor1.png" alt="Виктория Ледерман" title="Виктория Ледерман"> </div>
+            <div class="carousel-slide">
+                <img src="img/autor2.png" alt="Стивен Кинг" title="Стивен Кинг"> </div>
+            <div class="carousel-slide">
+                <img src="img/autor3.png" alt="Мариам Петросян" title="Мариам Петросян"> </div>
+            <div class="carousel-slide">
+                <img src="img/autor4.png" alt="Фёдор Достоевский" title="Фёдор Достоевский"> </div>
+            <div class="carousel-slide">
+                <img src="img/autor5.png" alt="Рэй Брэдбери" title="Рэй Брэдбери"> </div>
+            </div>
+        </div>
+        <button class="carousel-btn next-btn" id="nextBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button> </div>
+</section>
+<!--Отзывы-->
+<section class="reviews-section">
+<div class="container">
+    <h2 class="section-title">Отзывы</h2>
+    <div class="rating-summary">
+        <span class="rating-number">5.0</span>
+        <div class="rating-stars-block">
+            <div class="stars">★★★★★</div>
+            <div class="reviews-count">78 отзывов</div> </div>
+    </div>
+<div class="reviews-grid">
+    <div class="review-card">
+        <img src="img/avatar1.png" alt="Елена" class="avatar">
+        <div class="review-content">
+            <div class="review-header">
+                <div class="review-name">Елена</div>
+                <div class="review-stars">★★★★★</div> </div>
+            <p class="review-text">Уже не первый раз заказываю книги именно у вас — и каждый раз остаюсь в полном восторге! Порадовала и на этот раз: доставка оказалась молниеносной, буквально не успел оглянуться, как посылка уже у меня. Упаковка — просто на пять с плюсом: книга приехала в идеальном состоянии, видно, что о товаре заботятся. С удовольствием рекомендую вас всем друзьям — и сама обязательно буду возвращаться за новыми историями!</p> 
+            <div class="review-reactions">
+                <button class="reaction-btn like-btn">
+                    <span class="icon">👍</span> Полезно <span class="count" id="like-count-1">12</span> </button>
+                <button class="reaction-btn dislike-btn">
+                    <span class="icon">👎</span> <span class="count" id="dislike-count-1">0</span> </button>
+            </div>
+        </div>
+    </div>
+    <div class="review-card">
+        <img src="img/avatar2.png" alt="Гость" class="avatar">
+        <div class="review-content">
+            <div class="review-header">
+                <div class="review-name">Гость</div>
+                <div class="review-stars">★★★★★</div> </div>
+            <p class="review-text">Признаться, брал книгу В начале было "Слово — в конце будет Цифра" с долей скепсиса — современный опыт приучил к скромным ожиданиям. Но тут всё сложилось иначе: ни намёка на скуку, ни секунды разочарования. Напротив — захватывающий сюжет, живые персонажи и тот редкий момент, когда забываешь, что ты просто читаешь. Неожиданный, но очень приятный сюрприз. Заслуживает твёрдых пяти звёзд. Буду иметь вас в виду для следующих покупок!</p>  
+            <div class="review-reactions">
+                <button class="reaction-btn like-btn">
+                    <span class="icon">👍</span> Полезно <span class="count" id="like-count-2">34</span> </button>
+                <button class="reaction-btn dislike-btn">
+                    <span class="icon">👎</span> <span class="count" id="dislike-count-2">2</span> </button>
+            </div>
+        </div>
+    </div>
+    <div class="review-card">
+        <img src="img/avatar3.png" alt="Чики пики" class="avatar">
+        <div class="review-content">
+            <div class="review-header">
+                <div class="review-name">Чики пики</div>
+                <div class="review-stars">★★★★★</div> </div>
+            <p class="review-text">Это было невероятно! Книга Твое сердце будет разбито настолько интересная, что я буквально проглотила её за пару вечеров. Столько ярких моментов, неожиданных поворотов — я то волновалась, то радовалась вместе с героями. Просто восторг! Пять звёзд без сомнений! Уже думаю, какую книгу у вас заказать следующей!</p>
+            <div class="review-reactions">
+                <button class="reaction-btn like-btn">
+                    <span class="icon">👍</span> Полезно <span class="count" id="like-count-3">8</span> </button>
+                <button class="reaction-btn dislike-btn">
+                    <span class="icon">👎</span> <span class="count" id="dislike-count-3">0</span> </button>
+            </div>
+        </div>
+    </div>
+    <div class="review-card">
+        <img src="img/avatar4.png" alt="Илья" class="avatar">
+        <div class="review-content">
+            <div class="review-header">
+                <div class="review-name">Илья</div>
+                <div class="review-stars">★★★★★</div> </div>
+            <p class="review-text">Ну что сказать — я в восторге! Заказал „Гарри Поттер и Принц‑полукровка“, и это оказалось именно то, что нужно для уютного вечера. Снова эти любимые герои, интриги, магия… Читал и будто сам оказался в Хогвартсе! Столько эмоций — то волнуюсь, то улыбаюсь. Однозначно стоит каждой минуты, потраченной на чтение!</p>
+            <div class="review-reactions">
+                <button class="reaction-btn like-btn">
+                    <span class="icon">👍</span> Полезно <span class="count" id="like-count-4">19</span> </button>
+                <button class="reaction-btn dislike-btn">
+                    <span class="icon">👎</span> <span class="count" id="dislike-count-4">1</span> </button>
+            </div>
+        </div>
+    </div>
+</div> </div>
+</section>
+<!--Футер-->
+<footer class="footer"> <div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2 class="footer-logo-text">Книжный дом</h2>
+        </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li> </ul> </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +7 (900) 000-00-00</li>
+                    <li><i class="fas fa-envelope"></i> info@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Ежедневно с 8:00 до 22:00</li> </ul> </div>
+    </div> </div> </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

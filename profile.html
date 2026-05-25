@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Жаворонкова Маргарита">
+    <meta name="description" content="Курсовая работа: Книжный интернет-магазин">
+    <meta name="keywords" content="книжный магазин, книги, Пушкин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Хиты продаж</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<!-- Хэдер -->
+<header class="header">
+<div class="header-container">
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="Logo"> </div>
+        <div class="logo-text">Книжный<br>дом</div> </div>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Главная</a>  
+        <div class="dropdown">
+            <a href="#" class="nav-link" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Лирика</a>
+                <a href="catalog2.html" class="catalog-item">Эпос</a>
+                <a href="catalog3.html" class="catalog-item">Драма</a>
+                <a href="catalog4.html" class="catalog-item">Манга</a> </div>
+        </div>
+        <a href="delivery.html" class="nav-link">Доставка</a>
+        <a href="hit.html" class="nav-link">Хиты продаж</a>
+    </nav>
+    <div class="header-tools">
+        <a href="basket.html" class="tool-circle">
+            <img src="img/cart-icon.png" alt="Корзина" class="tool-img"> </a>
+        <a href="profile.html" class="tool-circle">
+            <img src="img/user-icon.png" alt="Профиль" class="tool-img"> </a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..."> </div>
+        </div>
+    </div>
+</header>
+<!--Профиль-->
+<main class="profile-page-content">
+    <div class="profile-container">
+        
+        <aside class="profile-sidebar">
+            <div class="avatar-upload-container">
+                <div class="avatar-preview-wrapper">
+                    <img src="img/user.png" id="avatarPreview" alt="Аватар">
+                    <label for="avatarInput" class="avatar-edit-badge">📷</label>
+                </div>
+                <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                <h3 class="user-display-name" id="sideName">Читатель</h3>
+                <span class="user-status-tag">Книжный червь 🐛</span>
+            </div>
+
+            <div class="bonus-card-widget">
+                <div class="bonus-card-header">
+                    <span>Бонусная карта</span>
+                    <strong>№ 742-991</strong>
+                </div>
+                <div class="bonus-balance">
+                    <span class="bonus-count">450</span>
+                    <span class="bonus-label">баллов</span>
+                </div>
+                <div class="bonus-progress-bar">
+                    <div class="bonus-progress-fill" style="width: 65%;"></div>
+                </div>
+                <p class="bonus-footer-text">Еще 150 баллов до скидки 10%</p>
+            </div>
+        </aside>
+
+        <section class="profile-main-form">
+            <h1 class="profile-title">Личные данные</h1>
+            <p class="profile-subtitle">Управляйте своими настройками, чтобы получать персонализированные книжные подборки.</p>
+
+            <form id="profileForm" onsubmit="event.preventDefault(); alert('Изменения успешно сохранены!');">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="profileName">Ваше Имя</label>
+                        <input type="text" id="profileName" placeholder="Иван Иванов" value=" " required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profileEmail">Электронная почта</label>
+                        <input type="email" id="profileEmail" placeholder="example@mail.ru" value=" " required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profileBirth">Дата рождения</label>
+                        <input type="date" id="profileBirth" value=" ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profilePhone">Номер телефона</label>
+                        <input type="tel" id="profilePhone" placeholder="+7 (900) 000-00-00" value="">
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="profileAddress">Адрес доставки по умолчанию</label>
+                    <textarea id="profileAddress" rows="2" placeholder="Город, улица, дом, квартира, индекс..."> </textarea>
+                </div>
+
+                <div class="checkbox-section">
+                    <h3>Настройки уведомлений и доступов</h3>
+                    
+                    <label class="custom-checkbox-container">
+                        <input type="checkbox" id="subscribeNews" checked>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">Хочу получать подборки секретных акций, промокоды и книжные новинки недели.</span>
+                    </label>
+
+                    <label class="custom-checkbox-container">
+                        <input type="checkbox" id="confirmAge" required>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text red-text">Мне исполнилось 18 лет. Подтверждаю для доступа к литературе категорий 18+ и сложным психологическим романам. *</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-save-profile">Сохранить изменения</button>
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+</main>
+<!--Футер-->
+<footer class="footer"> <div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2 class="footer-logo-text">Книжный дом</h2>
+        </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li> </ul> </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +7 (900) 000-00-00</li>
+                    <li><i class="fas fa-envelope"></i> info@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Ежедневно с 8:00 до 22:00</li> </ul> </div>
+    </div> </div> </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

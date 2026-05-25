@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Жаворонкова Маргарита">
+    <meta name="description" content="Курсовая работа: Книжный интернет-магазин">
+    <meta name="keywords" content="книжный магазин, книги, Пушкин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Хиты продаж</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+<!-- Хэдер -->
+<header class="header">
+<div class="header-container">
+    <div class="logo-section">
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="Logo"> </div>
+        <div class="logo-text">Книжный<br>дом</div> </div>
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Главная</a>  
+        <div class="dropdown">
+            <a href="#" class="nav-link" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item"></a>
+                <a href="catalog2.html" class="catalog-item">Эпос</a>
+                <a href="catalog3.html" class="catalog-item">Драма</a>
+                <a href="catalog4.html" class="catalog-item">Манга</a> </div>
+        </div>
+        <a href="delivery.html" class="nav-link">Доставка</a>
+        <a href="hit.html" class="nav-link">Хиты продаж</a>
+    </nav>
+    <div class="header-tools">
+        <a href="basket.html" class="tool-circle">
+            <img src="img/cart-icon.png" alt="Корзина" class="tool-img"> </a>
+        <a href="profile.html" class="tool-circle">
+            <img src="img/user-icon.png" alt="Профиль" class="tool-img"> </a>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..."> </div>
+        </div>
+    </div>
+</header>
+<!--корзина-->
+<main class="cart-main-content">
+    <div class="container">
+        <h1 class="cart-page-title">🛒 Ваша корзина</h1>
+
+        <div id="emptyCartView" class="empty-cart-container">
+            <div class="empty-cart-icon">💨</div>
+            <h2>В корзине пока ничего нет</h2>
+            <p>Но это легко исправить! Загляните в наши «Хиты продаж» или полистайте каталог.</p>
+            <a href="index.html" class="btn-to-shop">Перейти к покупкам</a>
+        </div>
+
+        <div id="activeCartView" class="active-cart-grid" style="display: none;">
+            
+            <div class="cart-items-list" id="cartItemsContainer">
+                <div class="cart-item-card">
+                    <img src="img/book1.jpg" alt="Обложка" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <h3 class="cart-item-title">В начале было Слово — в конце будет Цифра</h3>
+                        <p class="cart-item-author">Маргарита Симоньян</p>
+                    </div>
+                    <div class="cart-item-price">1 279 ₽</div>
+                    <button class="btn-remove-item" onclick="removeDemoItem(this)">✕</button>
+                </div>
+            </div>
+
+            <aside class="cart-summary-block">
+                <h3>Итог заказа</h3>
+                <div class="summary-row">
+                    <span>Товары (1)</span>
+                    <span id="totalItemsPrice">1 279 ₽</span>
+                </div>
+                <div class="summary-row">
+                    <span>Доставка</span>
+                    <span class="free-delivery-text">Бесплатно</span>
+                </div>
+                <hr class="summary-divider">
+                <div class="summary-total-row">
+                    <span>К оплате:</span>
+                    <strong id="finalOrderPrice">1 279 ₽</strong>
+                </div>
+                <button class="btn-checkout-start" id="openCheckoutBtn">Перейти к оформлению</button>
+            </aside>
+
+        </div>
+    </div>
+</main>
+
+<div class="modal-overlay" id="checkoutModal">
+    <div class="modal-window">
+        <button class="modal-close-btn" id="closeCheckoutBtn">✕</button>
+        <h2 class="modal-title">📦 Оформление заказа</h2>
+        
+        <form id="checkoutForm" onsubmit="event.preventDefault(); location.reload();">
+            
+            <div class="modal-form-group">
+                <label for="orderFio">ФИО получателя *</label>
+                <input type="text" id="orderFio" placeholder="Иванов Иван Иванович" required>
+            </div>
+
+            <div class="modal-form-row">
+                <div class="modal-form-group">
+                    <label for="orderEmail">Электронная почта *</label>
+                    <input type="email" id="orderEmail" placeholder="example@mail.ru" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="orderPhone">Номер телефона *</label>
+                    <input type="tel" id="orderPhone" placeholder="+7 (900) 000-00-00" required>
+                </div>
+            </div>
+
+            <div class="modal-form-group">
+                <label for="deliveryMethod">Способ доставки *</label>
+                <select id="deliveryMethod" required>
+                    <option value="" disabled selected>Выберите вариант...</option>
+                    <option value="pickup_point">Пункт выдачи заказов</option>
+                    <option value="courier">Курьерская доставка</option>
+                    <option value="russian_post">Почта России</option>
+                    <option value="self_delivery">Самовывоз из магазина</option>
+                </select>
+            </div>
+
+            <div class="modal-form-group" id="addressFieldWrapper" style="display: none;">
+                <label for="orderAddress">Адрес доставки *</label>
+                <textarea id="orderAddress" rows="2" placeholder="Город, улица, дом, квартира..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-order">Подтвердить и заказать</button>
+        </form>
+    </div>
+</div>
+<!--Футер-->
+<footer class="footer"> <div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2 class="footer-logo-text">Книжный дом</h2>
+        </div>
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li> </ul> </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +7 (900) 000-00-00</li>
+                    <li><i class="fas fa-envelope"></i> info@mail.ru</li>
+                    <li><i class="fas fa-clock"></i> Ежедневно с 8:00 до 22:00</li> </ul> </div>
+    </div> </div> </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
